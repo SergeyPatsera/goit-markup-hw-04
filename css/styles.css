@@ -230,13 +230,12 @@ nav {
     background-color: var(--dark-bg-cl);
     padding-top: 200px;
     padding-bottom: 200px;
-    background-image: linear-gradient( rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4),
-    url("../images/hero.jpg")
     max-width: 1600px;
-        height: 600px;
+    height: 600px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url('../images/hero.jpg');
+    margin: 0 auto;
+ }
 
-
-}
 .hero-title {
     color:var(--hero-title-cl);
     font-weight: 900;
@@ -305,6 +304,22 @@ nav {
 .feature-text{
     color: var(--secondary-txt-cl);
 }
+.feature-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 120px;
+    background: #F5F4FA;
+    border-radius: 4px;
+    margin-bottom: 30px;
+        
+
+}
+.feature-icon {
+    width: 70px;
+    height: 70px;
+}
 /*Чим ми займаємось*/
 .works.section {
     padding-top: 0;
@@ -364,6 +379,54 @@ background-color: var(--light-bg-cl);
     flex-direction: column;
     background-color: var(--bg-team-cards);
     border-radius: var(--border-team);
+}
+/*постійні кліенти*/
+.clients-title {
+    text-align: center;
+    font-size: 36px;
+    line-height: calc(42/36);
+    margin-bottom: 30px;
+}   
+.clients-list {
+    display: flex;
+    padding-left: 0;
+    list-style: none;
+    gap: 30px;
+    }
+.clients-item {
+    flex-basis: calc((100%-150px) / 6);
+}
+
+
+.social-list {
+    display: flex;
+    gap: 10px;
+    padding-left: 0;
+    
+}
+.social-icon {
+    fill: currentColor;
+    width: 20px;
+    height: 20px;
+   
+}
+.social-item {
+    list-style:  none;
+    margin-top: 16px;
+}
+.social-link {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    align-items: center;
+    justify-content: center;
+    color: #AFB1B8;
+}
+.social-link:hover,
+.social-link:focus {
+    color:#FFFFFF;
+    background-color: #2196F3;
+
 }
 
 /*Портфоліо*/
