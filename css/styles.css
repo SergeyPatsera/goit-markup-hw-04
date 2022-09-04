@@ -142,17 +142,21 @@ nav {
     padding-left: 0;
 }
 .contact-link {
-    display: inline-block;
+    display: flex;
     padding-top: 32px;
     padding-bottom: 31px;
-
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
     text-decoration: none;
     color: var(--contacts-hdr-cl);
     font-weight: 500;
     line-height: calc(16/14);
     letter-spacing: 0.02em;
 }
-
+.contact-svg {
+    fill: currentColor;
+}
 .contact-link:hover,
 .contact-link:focus {
     color: var(--link-hvr-cl);
@@ -226,6 +230,10 @@ nav {
     background-color: var(--dark-bg-cl);
     padding-top: 200px;
     padding-bottom: 200px;
+    background-image: linear-gradient( rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4),
+    url("../images/hero.jpg")
+    max-width: 1600px;
+        height: 600px;
 
 
 }
